@@ -13,15 +13,20 @@ let age = 13;
 let year = 2027;
 let money = 1000000;
 
-console.log("greetings " + name)
+let divideTwo = money/2;
+let plusThree = money/2+3;
 
-console.log("You are ", age +3)
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-console.log("The year is ", + year)
+OUTPUT.innerHTML ="<p> Greetings " + name;
 
-console.log("As of 2030, you have", + money)
+OUTPUT.innerHTML +="<p>You are " + age
 
-console.log("You spend half you money, you now have. ",  money /2)
+OUTPUT.innerHTML += "<p> The year is " + year + 3;
+
+OUTPUT.innerHTML +="<p>As of 2030, you have" + money;
+
+OUTPUT.innerHTML +="<p>You spend half you money, you now have. " +  divideTwo;
 
 
 
