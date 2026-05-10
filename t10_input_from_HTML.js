@@ -9,7 +9,7 @@ console.log("CONNOR SG MNGRL MB yza!")
 
 //Variables 
 let name = "Jacob"
-let age = 13;
+let userAge = 13;
 let year = 2027;
 let money = 1000;
 let divideTwo = money / 2;
@@ -55,9 +55,9 @@ Functions
     }
     
     function getFormInput(){
-        const NAME_FIELD = document.getElementById("nameField");
-        let userName = NAME_FIELD.value;
-        OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
+        const AGE_FIELD = document.getElementById("ageField");
+        let userAge = AGE_FIELD.value;
+        OUTPUT.innerHTML = "<p>Your age is "+userAge+"</p>";
       }
       
     function displayProduct(_name, _price) {
