@@ -8,8 +8,8 @@ console.log("CONNOR SG MNGRL MB yza!")
 // This is a single line comment
 
 //Variables 
-let name = "Jacob"
-let age = 13;
+let userName = "Jacob"
+let userAge = AGE_FIELD.value;
 let year = 2027;
 let money = 1000;
 let divideTwo = money / 2;
@@ -23,24 +23,24 @@ Main Code
 
 
 
-function start(){
+function start() {
 
 
-welcome()
+  welcome()
 
-displayProduct("chips", 3);
-displayProduct("Chocalate", 4);
-displayProduct("Drink", 2.50);
+  displayProduct("chips", 3);
+  displayProduct("Chocalate", 4);
+  displayProduct("Drink", 2.50);
 
-OUTPUT.innerHTML += "<p> Greetings " + name;
+  OUTPUT.innerHTML += "<p> Greetings " + userName;
 
-OUTPUT.innerHTML += "<p> As of " + year + " you are " + plusThreeAge + " years old ";
+  OUTPUT.innerHTML += "<p> As of " + year + " you are " + plusThreeAge + " years old ";
 
-OUTPUT.innerHTML += "<p> The year is " + plusThree;
+  OUTPUT.innerHTML += "<p> The year is " + plusThree;
 
-OUTPUT.innerHTML += "<p>As of " + year + " you had " + money;
+  OUTPUT.innerHTML += "<p>As of " + year + " you had " + money;
 
-OUTPUT.innerHTML += "<p>You spend half you money, you now have " + divideTwo;
+  OUTPUT.innerHTML += "<p>You spend half you money, you now have " + divideTwo;
 
 }
 
@@ -49,18 +49,19 @@ OUTPUT.innerHTML += "<p>You spend half you money, you now have " + divideTwo;
 Functions
  ***************************************************/
 
- function welcome() {
-        OUTPUT.innerHTML += "<p> Welcome to the shop";
-    
-    }
-    
-    function getFormInput(){
-        const NAME_FIELD = document.getElementById("nameField");
-        let userName = NAME_FIELD.value;
-        OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
-      }
-      
-    function displayProduct(_name, _price) {
-        OUTPUT.innerHTML += "<p>" + _name + ": " + _price;
-        
-    }
+function welcome() {
+  OUTPUT.innerHTML += "<p> Welcome to the shop";
+
+}
+
+function getFormInput() {
+  const AGE_FIELD = document.getElementById("ageField");
+  let userAge = AGE_FIELD.value;
+  OUTPUT.innerHTML = "<p>Age: " + AGE_FIELD.value;
+
+}
+
+function displayProduct(_name, _price) {
+  OUTPUT.innerHTML += "<p>" + _name + ": " + _price;
+
+}

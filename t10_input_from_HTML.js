@@ -14,7 +14,7 @@ let year = 2027;
 let money = 1000;
 let divideTwo = money / 2;
 let plusThree = year + 3;
-let plusThreeAge = age + 3;
+let plusThreeAge = userAge + 3;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 /**********************************
@@ -32,7 +32,7 @@ displayProduct("chips", 3);
 displayProduct("Chocalate", 4);
 displayProduct("Drink", 2.50);
 
-OUTPUT.innerHTML += "<p> Greetings " + name;
+OUTPUT.innerHTML += "<p>Greetings " + name;
 
 OUTPUT.innerHTML += "<p> As of " + year + " you are " + plusThreeAge + " years old ";
 
@@ -56,6 +56,7 @@ Functions
     
     function getFormInput(){
         const AGE_FIELD = document.getElementById("ageField");
+        console.log(AGE_FIELD)
         let userAge = AGE_FIELD.value;
         OUTPUT.innerHTML = "<p>Your age is "+userAge+"</p>";
       }
