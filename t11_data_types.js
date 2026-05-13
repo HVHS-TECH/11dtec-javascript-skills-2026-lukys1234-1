@@ -2,19 +2,19 @@
 Name of Task:t10_input_from_HTML
 
 ****************************/
-console.log("t10_input_from_HTML")
+console.log("t11_data_types")
 console.log("CONNOR SG MNGRL MB yza!")
 
 // This is a single line comment
 
 //Variables 
 let userName = "Jacob"
-let userAge = AGE_FIELD.value;
+let userAge = 1;
 let year = 2027;
-let money = 1000;
-let divideTwo = money / 2;
+let userMoney = 1000;
+let divideTwo = userMoney / 2;
 let plusThree = year + 3;
-let plusThreeAge = age + 3;
+let plusThreeAge = userAge + 3;
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 /**********************************
@@ -38,7 +38,7 @@ function start() {
 
   OUTPUT.innerHTML += "<p> The year is " + plusThree;
 
-  OUTPUT.innerHTML += "<p>As of " + year + " you had " + money;
+  OUTPUT.innerHTML += "<p>As of " + year + " you had " + userMoney;
 
   OUTPUT.innerHTML += "<p>You spend half you money, you now have " + divideTwo;
 
@@ -57,11 +57,14 @@ function welcome() {
 function getFormInput() {
   const AGE_FIELD = document.getElementById("ageField");
   let userAge = AGE_FIELD.value;
-  OUTPUT.innerHTML = "<p>Age: " + AGE_FIELD.value;
+  const MONEY_FIELD = document.getElementById("moneyField");
+  let userMoney = Number(MONEY_FIELD.value);
+  OUTPUT.innerHTML = "<p> You are " + userAge+" years old </p1>";
+  OUTPUT.innerHTML += "<p>You have " + userMoney+" dollars </p1>";
 
 }
 
 function displayProduct(_name, _price) {
   OUTPUT.innerHTML += "<p>" + _name + ": " + _price;
 
-}
+}         

@@ -2,7 +2,7 @@
 Name of Task:
 
 ****************************/
-console.log("Running JavaScript_and_HTML.js")
+console.log("t07_functions_parameters.js")
 console.log("CONNOR SG MNGRL MB yza!")
 
 // This is a single line comment
