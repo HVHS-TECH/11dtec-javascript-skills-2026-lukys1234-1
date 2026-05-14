@@ -55,23 +55,19 @@ function welcome() {
 }
 
 function getFormInput() {
-  const AGE_FIELD = document.getElementById("ageField");
-  let userAge = AGE_FIELD.value;
   const MONEY_FIELD = document.getElementById("moneyField");
   let userMoney = Number(MONEY_FIELD.value);
-  OUTPUT.innerHTML = "<p> You are " + userAge+" years old </p1>";
-  OUTPUT.innerHTML += "<p>You have " + userMoney+" dollars </p1>";
 
+
+
+  if (userMoney >= 4) {
+    OUTPUT.innerHTML = "<p> You can afford the choclate bar</p1>";
+  } else {
+    OUTPUT.innerHTML = "<p> You can't afford the choclate bar</p1>";
+  }
 }
 
 function displayProduct(_name, _price) {
   OUTPUT.innerHTML += "<p>" + _name + ": " + _price;
 
-}  
-       
-if (userMoney > 4){
-    OUTPUT.innerHTML = "<p> You cant afford the choclate bar</p1>";
 }
-if (userMoney < 4)
-    OUTPUT.innerHTML = "<p> You can afford the choclate bar</p1>";
-
